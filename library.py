@@ -98,7 +98,7 @@ def menu():
         for i in library_db:
             if (search_title.upper() == i.get('title').upper()) and i.get('present') != False:
                 print("\n//////////////////////////////////////////////////////")
-                print(f"\nYou have borrowed {i} for 30 days.")
+                print(f"\nYou have borrowed {i.get('title')} for 30 days.")
                 print("\n//////////////////////////////////////////////////////")
                 time.sleep(3)
                 take_out_item(search_title)
@@ -112,7 +112,7 @@ def menu():
         for i in library_db:
             if (search_title.upper() == i.get('title').upper()) and i.get('present') != False:
                 print("\n//////////////////////////////////////////////////////")
-                print(f"\nYou have borrowed {i.get('title') for 30 days.")
+                print(f"\nYou have borrowed {i.get('title')} for 30 days.")
                 print("\n//////////////////////////////////////////////////////")
                 time.sleep(3)
                 take_out_item(search_title)
